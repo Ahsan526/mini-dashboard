@@ -170,9 +170,9 @@ function Admin() {
                       <th className="px-6 py-4 text-left text-xs font-semibold text-white uppercase tracking-wider">
                         Submitted
                       </th>
-                      <th className="px-6 py-4 text-left text-xs font-semibold text-white uppercase tracking-wider">
+                      {/* <th className="px-6 py-4 text-left text-xs font-semibold text-white uppercase tracking-wider">
                         Actions
-                      </th>
+                      </th> */}
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
@@ -213,7 +213,7 @@ function Admin() {
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="text-sm text-gray-500">{formatDate(lead.created_at)}</div>
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
+                        {/* <td className="px-6 py-4 whitespace-nowrap">
                           <button
                             onClick={() => deleteLead(lead.id)}
                             disabled={deleteLoading === lead.id}
@@ -225,7 +225,7 @@ function Admin() {
                           >
                             {deleteLoading === lead.id ? 'Deleting...' : 'Delete'}
                           </button>
-                        </td>
+                        </td> */}
                       </tr>
                     ))}
                   </tbody>
@@ -239,7 +239,7 @@ function Admin() {
                 <div key={lead.id} className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-lg font-bold text-gray-900">{lead.name}</h3>
-                    <button
+                    {/* <button
                       onClick={() => deleteLead(lead.id)}
                       disabled={deleteLoading === lead.id}
                       className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-all ${
@@ -249,7 +249,7 @@ function Admin() {
                       }`}
                     >
                       {deleteLoading === lead.id ? 'Deleting...' : 'Delete'}
-                    </button>
+                    </button> */}
                   </div>
 
                   <div className="space-y-3">
